@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- واجهة النشاط الأول: نموذج تسجيل المسافر -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fond_sombre"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tv_titre_bz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:text="@string/titre_formulaire"
+            android:textColor="@color/or_passeport"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_nom_bz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@color/papier"
+            android:hint="@string/hint_nom"
+            android:inputType="textPersonName"
+            android:padding="14dp"
+            android:textColor="@color/encre"
+            android:textColorHint="#777777" />
+
+        <EditText
+            android:id="@+id/et_naissance_bz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@color/papier"
+            android:hint="@string/hint_naissance"
+            android:inputType="number"
+            android:maxLength="4"
+            android:padding="14dp"
+            android:textColor="@color/encre"
+            android:textColorHint="#777777" />
+
+        <EditText
+            android:id="@+id/et_destination_bz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@color/papier"
+            android:hint="@string/hint_destination"
+            android:inputType="number"
+            android:maxLength="4"
+            android:padding="14dp"
+            android:textColor="@color/encre"
+            android:textColorHint="#777777" />
+
+        <TextView
+            android:id="@+id/tv_label_motif_bz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:text="@string/label_motif"
+            android:textColor="@color/blanc"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/rg_motif_bz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb_tourisme_bz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/motif_tourisme"
+                android:textColor="@color/blanc" />
+
+            <RadioButton
+                android:id="@+id/rb_modification_bz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/motif_modification"
+                android:textColor="@color/blanc" />
+
+            <RadioButton
+                android:id="@+id/rb_fuite_bz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/motif_fuite"
+                android:textColor="@color/blanc" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_inspecter_bz"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:backgroundTint="@color/or_passeport"
+            android:text="@string/btn_inspecter"
+            android:textColor="@color/encre"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>
