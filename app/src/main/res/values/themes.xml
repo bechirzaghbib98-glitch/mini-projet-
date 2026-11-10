@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.DouaneTemporelle" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/bleu_temps</item>
+        <item name="colorOnPrimary">@color/blanc</item>
+        <item name="android:windowBackground">@color/fond_sombre</item>
+    </style>
+</resources>

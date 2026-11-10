@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="fond_sombre">#0D1B2A</color>
+    <color name="bleu_temps">#1B4965</color>
+    <color name="or_passeport">#C9A227</color>
+    <color name="papier">#F4EBD0</color>
+    <color name="encre">#2B2B2B</color>
+    <color name="vert_approuve">#2E7D32</color>
+    <color name="rouge_refuse">#C62828</color>
+    <color name="blanc">#FFFFFF</color>
+</resources>
