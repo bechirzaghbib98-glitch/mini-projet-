@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- واجهة النشاط الثاني: ماسح المفارقة (شكل جواز سفر)
+     القيد: LinearLayout أفقي كجذر، صورة يسارًا بوزن 0.3 و RelativeLayout يمينًا بوزن 0.7 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_racine_bz"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/papier"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <!-- الصورة على اليسار (وزن 0.3) -->
+    <ImageView
+        android:id="@+id/iv_photo_bz"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3"
+        android:background="@color/bleu_temps"
+        android:contentDescription="@string/titre_passeport"
+        android:padding="12dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_horloge" />
+
+    <!-- النصوص على اليمين (وزن 0.7) -->
+    <RelativeLayout
+        android:id="@+id/rl_textes_bz"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.7"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tv_titre_passeport_bz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="@string/titre_passeport"
+            android:textColor="@color/bleu_temps"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_nom_bz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_titre_passeport_bz"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/encre"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_age_bz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_nom_bz"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/encre"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_trajet_bz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_age_bz"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/encre"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_motif_bz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_trajet_bz"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/encre"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_alerte_bz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_motif_bz"
+            android:layout_marginTop="12dp"
+            android:text="@string/avertissement_premier"
+            android:textColor="@color/rouge_refuse"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_refuser_bz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="@color/rouge_refuse"
+            android:text="@string/btn_refuser"
+            android:textColor="@color/blanc" />
+
+        <Button
+            android:id="@+id/btn_approuver_bz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btn_refuser_bz"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@color/vert_approuve"
+            android:text="@string/btn_approuver"
+            android:textColor="@color/blanc" />
+    </RelativeLayout>
+</LinearLayout>
